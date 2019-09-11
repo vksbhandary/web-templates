@@ -1,0 +1,389 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 15 Sep, 2016, 12:18:47 PM
+    Author     : vikku
+*/
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Roboto+Slab:100,300,400,700';
+
+
+
+body{
+ // padding-top: 50px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+.page{
+    padding: 50px 0px;
+}
+
+.page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.navbar {
+  border-radius: 0;
+  border: 0;
+}
+/* Navbar toggle*/
+@media only screen
+and (max-width: 768px){
+header .navbar-collapse.in{
+    background-color: rgba(0,0,0,.7);
+}
+#featured .carousel-inner .item .carousel-caption{
+    display: none;
+}
+
+}
+
+/* Header and navigation section*/
+header .navbar{
+    padding: 30px 0px;
+
+}
+header .navbar-default{
+    //background-color: rgba(0, 0, 0,0.8);
+    background-color: transparent;
+
+    border: none;
+
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 0.8em;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: black;
+    background-color: rgb(0, 172, 230);
+}
+
+.navbar-default .navbar-nav>li.active>a {
+    color: black;
+    background-color: rgb(0, 172, 230);
+    font-weight: 400;
+    border-bottom: 2px solid white;
+}
+.navbar-default .navbar-nav>li.active>a:hover {
+    color: black;
+    background-color: white;
+    font-weight: 400;
+}
+
+
+
+
+.subhead{
+    font-size: 0.8em;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 100;
+    display: block;
+
+}
+
+.navbar-brand h1{
+    color: white;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 400;
+    padding-left: 0px;
+    margin-top: -27px;
+}
+
+/* inbody styling*/
+header .inbody{
+    background: rgba(0,0,0,.7);
+}
+header .navbar.inbody{
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+header .inbody .navbar-brand h1{
+    font-size: 1.1em;
+    padding-left: 38px;
+    margin-top: -10px;
+}
+
+header .navbar.inbody navbar-nav{
+    padding-top: 10px;
+}
+header .inbody .navbar-brand span.subhead{
+   /* // display:none; */
+}
+header .navbar{
+    padding: 30px 0;
+    transition: all .5s ease-out;
+
+}
+
+
+/* Mission page */
+#mission {
+  background-color: #E4D29D;
+  background-image: linear-gradient(to bottom, #f6f7be, #3c9a2d);
+  border-top: 20px solid rgba(224, 206, 154, .5);
+}
+
+/* Service page */
+
+#services{
+    margin: 20px 0px;
+    text-align: center;
+
+}
+
+#services img.icon{
+    display: block;
+    width:150px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+
+}
+#services h3{
+    margin-bottom: 10px;
+
+}
+
+@media only screen
+and (min-width: 450px)
+and (max-width: 768px){
+
+    .service p{
+        padding: 0 10%;
+    }
+}
+
+
+/* Atraaction page*/
+
+
+.attraction >img{
+    width: 100%;
+}
+
+.chef >img{
+    width: 200px;
+}
+
+.carousel-inner > .item >img{
+    width: 100%
+}
+
+.attraction {
+position: relative;
+padding: 5px 5px;
+margin: 0;
+}
+.attraction img {
+display: block;
+}
+.attraction-desc {
+opacity: 0;
+position: absolute;
+width: 100%;
+color: #fff;
+left: 0;
+bottom: 0;
+padding: 0.75em 1em;
+z-index: 2;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+background-color: rgba(0,0,0,.5);
+-webkit-transition: opacity 1s ease-in-out;
+transition: opacity 1s ease-in-out;
+
+
+}
+.attraction-desc p{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.attraction:hover .attraction-desc {
+opacity: 1;
+}
+
+/* Our chef page*/
+
+
+
+#chefs{
+    margin: 0px 0px;
+    text-align: center;
+    background-color: #E4D29D;
+    background-image: linear-gradient(to bottom, #eeefd5, #e3ec72);
+    border-top: 20px solid rgba(224, 206, 154, .5);
+}
+
+.chef img.img-circle{
+    display: block;
+    width:180px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+
+}
+.chef h3{
+    margin-bottom: 10px;
+
+}
+
+
+
+
+/* Testimonial page*/
+
+.empty-box-carousel{
+
+      min-width:350px;
+      min-height:250px;
+      height: inherit;
+      width: inherit;
+}
+
+
+#testimonial .carousel-inner .item .carousel-caption {
+   display: inline-block;
+    right: 70%;
+    left: 0%;
+//    top: 5%;
+    width: 100%;
+     text-align: center;
+
+}
+#testimonial .carousel-inner .item .carousel-caption h1
+{
+    font-weight: 300;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 30px;
+    color: black;
+    text-shadow: none;
+
+}
+#testimonial .carousel-inner .item .carousel-caption a{
+    text-shadow: none;
+    color: blue;
+}
+#testimonial .carousel-inner .item .carousel-caption a:hover{
+    text-decoration: none;
+
+}
+
+#featured .carousel-caption {
+     display: inline-block;
+    right: 70%;
+    left: 10%;
+    top: 30%;
+    width: 30%
+
+
+}
+
+/* footer section*/
+
+footer{
+    background: #e3ec72;
+    color: black;
+    font-size: .8em;
+    padding: 20px 0 50px 0;
+    background-image: linear-gradient(to bottom, #e3ec72, #f7f7ee);
+    font-weight: 400;
+    font-size: 0.8em;
+
+}
+footer a {
+    color: blue;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+footer .phone{
+    font-size: .9em;
+
+    color: blue;
+    font-weight: 700;
+
+}
+footer .navbar{
+    margin-bottom: 0;
+    min-height: 0;
+
+}
+footer .navbar-default {
+  background: transparent;
+  border: none;
+  margin-right: 40px;
+}
+footer .nav-pills>li a{
+    padding-top: 0;
+    padding-bottom: 0;
+    text-decoration: none;
+    color: black !important;
+}
+footer .nav-pills>li a:hover{
+     background: transparent;
+}
+
+footer p.main{
+    text-align: center;
+}
+
+footer .fa{
+    font-size: 3em;
+}
+
+
+footer a.gplus:hover {
+    text-decoration: none;
+    color: red;
+}
+
+
+footer a.insta:hover {
+    text-decoration: none;
+    color: #c9302c;
+}
+
+
+
+footer a.twitter:hover {
+    text-decoration: none;
+    color: #31b0d5;
+}
+
+footer .row {
+
+    padding-top: 20px;
+}
+
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #27AE61 url("../img/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
