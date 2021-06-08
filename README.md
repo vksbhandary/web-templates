@@ -1,4 +1,4 @@
-# Bootstrap templates
+# Web templates
 
 
-These are collection of web pages designed using bootstrap 3 or 4.
+This repo is collection of various web templates.
