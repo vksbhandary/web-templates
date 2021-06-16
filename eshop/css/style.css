@@ -127,10 +127,16 @@ body {
   border-radius: 25px;
   background-color: black;
   color: #dcdcdc;
-  padding: 10px;
+  padding: 5px;
+  height: 20px;
+  width: 20px;
   font-weight: 800;
   cursor: pointer;
+  align-content: center;
+  justify-content: center;
+  display: flex;
 }
+
 .slide-button.left {
   visibility: hidden;
 }
