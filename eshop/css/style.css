@@ -138,6 +138,10 @@ body {
   -webkit-appearance: none;
   width: 0;
 }
+.product_slider {
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+}
 .product_slider::-webkit-scrollbar-thumb {
   border: none;
 }
