@@ -107,6 +107,24 @@ body {
 .main_category_container .main_category_name {
   display: flex;
 }
+.sub_category_name{
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+.sub_category_name h1{
+  flex: 2;
+}
+.sub_category_name button{
+  background-color: black;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 90px;
+  cursor: pointer;
+}
+/* slider css */
 .slider-container {
   display: flex;
   flex-direction: row;
